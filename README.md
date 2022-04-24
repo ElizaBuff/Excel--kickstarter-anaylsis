@@ -16,7 +16,7 @@ Louise’s play Fever came close to its fundraising goal in a short amount of ti
 
 ---
 
-![Outcomes_vs_Goals](path/to/Outcomes_vs_Goals.png)
+![Outcomes_vs_Goals.png](path/to/Outcomes_vs_Goals.png)
 
 ![Theater_Outcomes_vs_Launch](path/to/Theater_Outcomes_vs_Launch.png)
 
