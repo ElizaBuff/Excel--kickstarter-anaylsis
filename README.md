@@ -20,14 +20,14 @@ Based on the line graph above, I had the following takeways about theather campa
 * In every month there were more successful than failed campagins. Generally, the successful and failed trend lines create the same shape and are similar to each other with the exception of May, October, and December. In May, the larger than average gap between successful and failed campaigns suggests a better chance for success. In October, the smaller than average gap between successful and failed campaigns suggests a better chance for failure. 
 
 
-Next, I organized the data to see if funding goal could impact the kickstarter's success. First, I needed to count the number of successful, failed, and canceled plays by goal. To do this, I used the COUNTIFS formula. For example, to count the number of successful plays with a goal between 1,000 and 4,999 I wrote the formula =COUNTIFS('Raw Data'!$O:$O, "plays",'Raw Data'!$D:$D, ">=1000", 'Raw Data'!$D:$D, "<5000", 'Raw Data'!$F:$F, "successful"). Then, I converted the number of successful, failed, and cancled plays to a percentage to more accurately compare them. Using this information, I created the line graph shown below. 
+Next, I organized the data to see if the funding goal could impact the kickstarter's success. First, I needed to count the number of successful, failed, and canceled plays by goal. To do this, I used the COUNTIFS formula. For example, to count the number of successful plays with a goal between 1,000 and 4,999 I wrote the formula =COUNTIFS('Raw Data'!$O:$O, "plays",'Raw Data'!$D:$D, ">=1000", 'Raw Data'!$D:$D, "<5000", 'Raw Data'!$F:$F, "successful"). Then, I converted the number of successful, failed, and cancled plays to a percentage to more accurately compare them. Using this information, I created the line graph shown below. 
 
 ![Outcomes_vs_Goals](Outcomes_vs_Goals.png)
 
 Based on the line graph above, I had the following takeways about play campaigns:
 * Because there are zero cancled plays, successful and failed campaigns are symetric about the 50% line. 
-* Generally, the percentage of successfully funded plays decreases as the goal increase with the exception of 29,999 to 49,999. This exception is likely due to a smaller sample size of 11 or less. 
-* Plays will a goal of less than 5,000 have a success rate 20 points higher than plays will a goal between 5,000 and 20,000. 
+* Generally, the percentage of successfully funded plays decreases as the goal increases with the exception of 29,999 to 49,999. This exception is likely due to a smaller sample size of 11 or less. 
+* Plays with a goal of less than 5,000 have a success rate 20 points higher than plays with a goal between 5,000 and 20,000. 
 
 
 ### Challenges 
@@ -36,12 +36,12 @@ One challenge I encountered in writing my countifs formula was ensuring that I o
 ---
 ## Results
 ### My Reccomendation 
-According to the data, Louise play's with a funding goal of $10,000 should be launched in May, June, or July and avoid a launch in October or December. Her currently funding goal has a 54% successful rate. If she could cut costs in half, her success rate would increase to approximately 70%. 
+According to the data, Louise's play with a funding goal of $10,000 should be launched in May, June, or July and avoid a launch in October or December. Her current funding goal has a 54% chance of succeeding. If she could cut costs in half, her success rate would increase to approximately 70%. 
 
 ### Limitations 
-Many of the limitations of this dataset come from the donation collection. For example, the method of how donations are collected is unclear. Is the crowdfunding solely from an online plateform like GoFundMe or were there other collections methods? If there were other collection methods, then which one was most successful? Are successful campaigns funded primarily by online methods, in person methods, or a mix of the two methods? Why are campaigns with zero backers be included in this dateset?
+Many of the limitations of this dataset come from the donation collection. For example, the method of how donations are collected is unclear. Is the crowdfunding solely from an online platform like GoFundMe or were there other collection methods? If there were other collection methods, then which one was most successful? Are successful campaigns funded primarily by online methods, in-person methods, or a mix of the two? Why are campaigns with zero backers included in this dateset?
 
 ### Digging Deeper 
-Louise's biggest concern is likely her funding goal. Would it be possible to reduce her funding goal to increase her chances of success? The data suggests- yes! Although cutting her budget from 10,000 to 5,000 could increase the likehood of her successful form 50% to 70%, that is a substancial cut which could negatively impact the quality of the her play. What would her chances of success be if her goal was 9,000 or 8,000? I would want to narrow the Octcomes vs Goals graph to funding goals of 0 to 11,000 and break down the percentage of success by increments of 500. This would help me make bettter suggestion than cutting her goal from 10,000 to 5,000. 
+Louise's biggest concern is likely her funding goal. Would it be possible to reduce her funding goal to increase her chances of success? The data suggests- yes! Although cutting her budget from 10,000 to 5,000 could increase the likehood of her success from 50% to 70%, that is a substantial cut which could negatively impact the quality of her play. What would her chances of success be if her goal was 9,000 or 8,000? I would want to narrow the Outcomes vs Goals graph to funding goals of 0 to 11,000 and break down the percentage of success by increments of 500. This would help me make better suggestions than cutting her goal from 10,000 to 5,000. 
 
-Another factor I am interested in is the amount of an average donation. Once Louise sets a funding goal, it would be helpful to know how much she should ask backers for. Should she put her time and energy into finding many backers to make smaller donation or a few backers into making larger donations? A line graph comparing successful/failed campagins by numnber of backers and average donation could help Louise maker better decisions about who she will ask to fund her play.  
+Another factor I am interested in is the amount of an average donation. Once Louise sets a funding goal, it would be helpful to know how much she should ask backers for. Should she put her time and energy into finding many backers to make smaller donation or a few backers into making larger donations? A line graph comparing successful/failed campagins by number of backers and average donation could help Louise make better decisions about who she will ask to fund her play.  
