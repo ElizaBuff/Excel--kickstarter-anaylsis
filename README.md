@@ -7,7 +7,7 @@ In this project, I demonstrated my proficiency with various features in excel in
 Louise, an up-and-coming playwright, wants to start a crowd funding campaign to fund her play *FEVER* which she estimates will cost over $10,000. The following report highlights specfic factors that lead to a successful campaign.     
 
 ---
-### Analysis and Challenges
+## Analysis and Challenges
 ### Analysis
 I organized the data to see if the month the kickstarter launched could impact its success. First, I made the data more detailed by splitting the Category and Subcategory column into two distinct columns. This allowed me to view the wider category of theater and later the narrower subcategory plays. Next, I converted Unix timestamps to identify the launch date. For example, I turned the cell **1434931811** into **06/22/15** using the code =(((J2/60)/60)/24)+DATE(1970,1,1). Finally, I created a pivot table that filtered based on "Parent Category" and "Years." From that pivot table I created the line graph shown below. 
 
@@ -31,8 +31,17 @@ Based on the line graph above, I had the following takeways about play campaigns
 
 
 ### Challenges 
-=COUNTIFS('Raw Data'!$O:$O, "plays",'Raw Data'!$D:$D, ">=1000", 'Raw Data'!$D:$D, "<5000", 'Raw Data'!$F:$F, "successful") 
+One challenge I encountered in writing my countifs formula was ensuring that I only counted the *plays*. Initially, my formula =COUNTIFS('Raw Data'!$D:$D, ">=1000", 'Raw Data'!$D:$D, "<5000", 'Raw Data'!$F:$F, "successful") counted every subcategory so I had to add an additional criteria and changed my formula to =COUNTIFS('Raw Data'!$O:$O, "plays",'Raw Data'!$D:$D, ">=1000", 'Raw Data'!$D:$D, "<5000", 'Raw Data'!$F:$F, "successful"). 
 
 ---
-### Results
+## Results
+### My Reccomendation 
+According to the data, Louise play's with a funding goal of $10,000 should be launched in May, June, or July and avoid a launch in October or December. Her currently funding goal has a 54% successful rate. If she could cut costs in half, her success rate would increase to approximately 70%. 
 
+### Limitations 
+Many of the limitations of this dataset come from the donation collection. For example, the method of how donations are collected is unclear. Is the crowdfunding solely from an online plateform like GoFundMe or were there other collections methods? If there were other collection methods, then which one was most successful? Are successful campaigns funded primarily by online methods, in person methods, or a mix of the two methods? Why are campaigns with zero backers be included in this dateset?
+
+### Digging Deeper 
+Louise's biggest concern is likely her funding goal. Would it be possible to reduce her funding goal to increase her chances of success? The data suggests- yes! Although cutting her budget from 10,000 to 5,000 could increase the likehood of her successful form 50% to 70%, that is a substancial cut which could negatively impact the quality of the her play. What would her chances of success be if her goal was 9,000 or 8,000? I would want to narrow the Octcomes vs Goals graph to funding goals of 0 to 11,000 and break down the percentage of success by increments of 500. This would help me make bettter suggestion than cutting her goal from 10,000 to 5,000. 
+
+Another factor I am interested in is the amount of an average donation. Once Louise sets a funding goal, it would be helpful to know how much she should ask backers for. Should she put her time and energy into finding many backers to make smaller donation or a few backers into making larger donations? A line graph comparing successful/failed campagins by numnber of backers and average donation could help Louise maker better decisions about who she will ask to fund her play.  
